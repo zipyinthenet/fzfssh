@@ -13,7 +13,7 @@ GIF
 ## Installation
 
 ```bash
-sudo git clone https://github.com/zipyinthenet/fzfssh.git /opt/
+sudo git clone https://github.com/zipyinthenet/fzfssh.git /opt/fzfssh/
 ```
 
 Execute with root permission , you can do that with 'sudo'
