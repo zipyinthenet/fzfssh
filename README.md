@@ -13,7 +13,7 @@ GIF
 ## Installation
 
 ```bash
-git clone git@github.com:zipyinthenet/fzfssh.git /opt/
+sudo git clone https://github.com/zipyinthenet/bash-tools.git /opt/
 ```
 
 Execute with root permission , you can do that with 'sudo'
