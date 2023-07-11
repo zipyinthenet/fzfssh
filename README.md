@@ -19,7 +19,7 @@ sudo git clone https://github.com/zipyinthenet/fzfssh.git /opt/fzfssh/
 Execute with root permission , you can do that with 'sudo'
 
 ```bash
-sudo ./opt/fzfssh/installer/install-fzfssh.sh
+sudo bash /opt/fzfssh/installer/install-fzfssh.sh
 ```
 
 fzfssh binary , links a symbolic file to '/usr/local/bin/' , so you can execute the binary fzfssh wherever directory of the system
