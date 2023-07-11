@@ -1,0 +1,35 @@
+#!/bin/bash
+function usage() {
+script_name=$(basename $0)
+cat << EOF	
+	$script_name [-h] [-t] [-u <user>]
+	-h            -> muestra este mensaje
+	-p <port> -> redireccion del puerto <port>=8080, 222...
+	-u <user>     -> usuario con el que conectarse en caso de no querer utilizar el mismo que el de la sesion de bash
+EOF
+}
+
+declare options
+while getopts "hu:p:" opt; do
+	case $opt in
+		h)
+			usage
+			exit 0
+		;;
+		u)
+
+			userat="$OPTARG"@
+		;;
+		p)
+			port="$OPTARG"
+			options="$options -L $port:localhost:$port"
+		;;
+		\?)
+			usage
+			exit 1
+		;;
+	esac
+done
+
+file=/opt/fzfssh/list_hosts/fzfssh_hosts
+exec ssh ${options} ${userat}$( < "$file" fzf | cut -d' ' -f1)
