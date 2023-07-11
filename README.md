@@ -22,6 +22,8 @@ Execute with root permission , you can do that with 'sudo'
 sudo ./opt/fzfssh/installer/install-fzfssh.sh
 ```
 
+fzfssh binary , links a symbolic file to '/usr/local/bin/' , so you can execute the binary fzfssh wherever directory of the system
+
 ## Add list hosts connections
 
 The directory '/opt/fzfssh/list_hosts/' contains the file 'fzfssh_hosts'
