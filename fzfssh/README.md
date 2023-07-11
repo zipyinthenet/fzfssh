@@ -11,4 +11,4 @@ Example:
 
 ## Installation
 
-git clone 
+git clone git@github.com:zipyinthenet/fzfssh.git /opt/
