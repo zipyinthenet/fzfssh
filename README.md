@@ -7,8 +7,26 @@ With FZF , you can search a connection SSH so fast.
 Only you need is to exec the binary named fzfssh , and you will have to search with fzf the connection that previously you have saved.
 
 Example:
-	fzfssh
+
+GIF
 
 ## Installation
 
+```bash
 git clone git@github.com:zipyinthenet/fzfssh.git /opt/
+```
+
+Execute with root permission , you can do that with 'sudo'
+
+```bash
+sudo ./opt/fzfssh/installer/install-fzfssh.sh
+```
+
+## Add list hosts connections
+
+The directory '/opt/fzfssh/list_hosts/' contains the file 'fzfssh_hosts'
+Only you need to write some new connections
+
+Example:
+
+GIF
