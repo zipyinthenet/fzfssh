@@ -8,7 +8,7 @@ Only you need is to exec the binary named fzfssh , and you will have to search w
 
 Example:
 
-GIF
+![gif-introduction](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTI5M2FoaWt6emFobGJjbjZ0dDJieGNqc3hoZ29jNjE5OXEwM2R4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XQ4uRIbsIvTEkCrXVq/giphy.gif)
 
 ## Installation
 
