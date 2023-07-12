@@ -1,5 +1,6 @@
 # FZFSSH tool
 
+## Index
 [Introduction](https://github.com/zipyinthenet/fzfssh#introduction)
 
 [Installation](https://github.com/zipyinthenet/fzfssh#installation)
