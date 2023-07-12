@@ -47,6 +47,6 @@ Example:
 options:
 
 	fzfssh [-h] [-t] [-u <user>]
-	-h            	-> muestra este mensaje
+	-h              -> muestra este mensaje
 	-p <port> 	    -> redireccion del puerto <port>=8080, 222...
-	-u <user>     	-> usuario con el que conectarse en caso de no querer utilizar el mismo que el de la sesion de bash
+	-u <user>       -> usuario con el que conectarse en caso de no querer utilizar el mismo que el de la sesion de bash
