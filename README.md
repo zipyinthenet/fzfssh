@@ -1,5 +1,10 @@
 # FZFSSH tool
 
+![Introduction](https://github.com/zipyinthenet/fzfssh#introduction)
+![Installation](https://github.com/zipyinthenet/fzfssh#installation)
+![Add-list-hosts-connections](https://github.com/zipyinthenet/fzfssh#add-list-hosts-connections)
+![Usage](https://github.com/zipyinthenet/fzfssh#usage)
+
 ## Introduction
 The proposite of this tool named fzfssh , is to take a SSH connection using FZF.
 With FZF , you can search a connection SSH so fast.
