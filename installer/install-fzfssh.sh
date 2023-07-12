@@ -5,9 +5,8 @@ if [ `whoami` != "root" ]; then
   exit 1
 fi
 
-optpath="/opt/fzfssh/resources"
-optpathlist_hosts="/opt/fzfssh/list_hosts/fzfssh_hosts"
-binpath="/usr/local/bin/"
+#charge variables
+source "/opt/fzfssh/installer/environment"
 
 # Change owner on /opt/fzfssh/resources/ files
 chown root.root "$optpath/fzf"

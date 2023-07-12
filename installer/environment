@@ -1,0 +1,3 @@
+optpath="/opt/fzfssh/resources"
+optpathlist_hosts="/opt/fzfssh/list_hosts/fzfssh_hosts"
+binpath="/usr/local/bin/"
