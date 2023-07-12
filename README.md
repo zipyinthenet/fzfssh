@@ -32,3 +32,12 @@ Only you need to write some new connections
 Example:
 
 ![gif-add-list](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmk1cjg2ZGFndTJ1czQ3ZTI3bjB1M3F0MHNyY3A3YjJjZThhNmQ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NpZmTWdJh0ocvyGO6L/giphy.gif)
+
+## Usage
+
+options:
+
+	fzfssh [-h] [-t] [-u <user>]
+	-h            	-> muestra este mensaje
+	-p <port> 		-> redireccion del puerto <port>=8080, 222...
+	-u <user>     	-> usuario con el que conectarse en caso de no querer utilizar el mismo que el de la sesion de bash
