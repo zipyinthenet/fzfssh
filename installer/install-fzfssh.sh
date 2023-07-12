@@ -8,7 +8,6 @@ fi
 optpath="/opt/fzfssh/resources"
 optpathlist_hosts="/opt/fzfssh/list_hosts/fzfssh_hosts"
 binpath="/usr/local/bin/"
-hosts_file=$(readlink -f "$optpathlist_hosts" | sed 's/\//\\\//g')
 
 # Change owner on /opt/fzfssh/resources/ files
 chown root.root "$optpath/fzf"
@@ -17,9 +16,6 @@ chown root.root "$optpath/fzfssh"
 # Change bits on /opt/fzfssh/resources/ files
 chmod 755 "$optpath/fzf"
 chmod 755 "$optpath/fzfssh"
-
-# Change HOSTFILE enviorenment on file
-sed -i "s/HOSTFILE/$hosts_file/g" "$optpath/fzfssh"
 
 # make symbolic files to /usr/local/bin
 ln -s "$optpath/fzf" "$binpath"
