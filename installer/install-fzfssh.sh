@@ -1,34 +1,56 @@
 #!/usr/bin/env bash
 
-if [ `whoami` != "root" ]; then
+# Onlyroot can run this script
+onlyroot () {
+  if [ `whoami` != "root" ]; then
   echo "Only root can run this"
   exit 1
-fi
+  fi
+}
 
-#charge variables
-source "/opt/fzfssh/installer/environment"
+# charge variables
+chargevariable () {
+  source "/opt/fzfssh/installer/environment"
+}
 
-# Change owner on /opt/fzfssh/resources/ files
-chown root.root "$optpath/fzf"
-chown root.root "$optpath/fzfssh"
-
-# Change bits on /opt/fzfssh/resources/ files
-chmod 755 "$optpath/fzf"
-chmod 755 "$optpath/fzfssh"
+# change owner on /opt/fzfssh/resources/ files
+# change bits on /opt/fzfssh/resources/ files
+ownerandbits () {
+  chown root.root "$optpath/fzf"
+  chown root.root "$optpath/fzfssh"
+  chmod 755 "$optpath/fzf"
+  chmod 755 "$optpath/fzfssh"
+}
 
 # make symbolic files to /usr/local/bin
-ln -s "$optpath/fzf" "$binpath"
-ln -s "$optpath/fzfssh" "$binpath"
+makesymbolicfiles () {
+  ln -s "$optpath/fzf" "$binpath"
+  ln -s "$optpath/fzfssh" "$binpath"
+}
 
 # create group fzfssh
-groupadd fzfssh
-
 # add users to group fzfssh
-for i in $(cat /etc/passwd | grep "/bin/bash" | cut -d ':' -f1)
-do
-	usermod -aG fzfssh $i
-done
+creategroupandaddusers () {
+  groupadd fzfssh
+  for i in $(cat /etc/passwd | grep "/bin/bash" | cut -d ':' -f1)
+  do
+    usermod -aG fzfssh $i
+  done
+}
 
-# Change owner and bits on /opt/fzfssh/list_hosts/fzfssh_hosts file
-chown root.fzfssh "$optpathlist_hosts"
-chmod 775 "$optpathlist_hosts"
+# change owner and bits on /opt/fzfssh/list_hosts/fzfssh_hosts file
+ownerandbitslisthosts () {
+  chown root.fzfssh "$optpathlist_hosts"
+  chmod 775 "$optpathlist_hosts"
+}
+
+init () {
+  onlyroot
+  chargevariable
+  ownerandbits
+  makesymbolicfiles
+  creategroupandaddusers
+  ownerandbitslisthosts
+}
+
+init
