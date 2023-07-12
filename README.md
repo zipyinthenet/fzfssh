@@ -31,4 +31,4 @@ Only you need to write some new connections
 
 Example:
 
-GIF
+![gif-add-list](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmk1cjg2ZGFndTJ1czQ3ZTI3bjB1M3F0MHNyY3A3YjJjZThhNmQ4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NpZmTWdJh0ocvyGO6L/giphy.gif)
