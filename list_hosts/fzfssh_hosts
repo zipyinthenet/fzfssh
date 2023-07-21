@@ -1,5 +1,5 @@
-### INICIO SEARCH-HOSTS ###
+### INICIO FZFSSH-HOSTS ###
 0.0.0.0 example.org
 127.0.0.1 localhost
 127.0.0.2 localhost2
-### FIN SEARCH-HOSTS ###
+### FIN FZFSSH-HOSTS ###
